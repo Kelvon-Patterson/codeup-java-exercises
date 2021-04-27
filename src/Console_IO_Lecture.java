@@ -66,12 +66,12 @@ public class Console_IO_Lecture {
         String dogName = "Rambo";
         int dogYears = 4;
 
-        System.out.printf("My dogs name is %s, he is my favorite and he is %d years old. ", dogName, dogYears);
+        System.out.printf("My dogs name is %s, he is my favorite and he is %d years old. \n", dogName, dogYears);
 
         String catName = "Loki";
         int catYears = 3;
 
-        System.out.printf("My cats name is %s, he is my girlfriend's cat he is %d years old", catName, catYears);
+        System.out.printf("My cats name is %s, he is my girlfriend's cat and he is %d years old", catName, catYears);
     }
 }
 
