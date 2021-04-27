@@ -94,19 +94,50 @@ public class ControlFlowExercises {
         //4      | 16      | 64
         //5      | 25      | 125
         //Solution:
+//        Scanner sc= new Scanner(System.in);
+//        System.out.println("What the number you want powered?");
+//        int poweredNum = sc.nextInt();
+//        System.out.println("Here is your table!");
+//        System.out.println("Number | Squared | Cubed");
+//        System.out.println("-------|---------|------" );
+//
+//        for(int i =1; i<= poweredNum;i++){
+//            int squared = i*i;
+//            int cubed = i*i*i;
+//            System.out.printf("%d | %d | %d \n", i,squared,cubed);
+//        }
+
+        //Convert given number grades into letter grades.
+        //
+        //Prompt the user for a numerical grade from 0 to 100.
+        //Display the corresponding letter grade.
+        //Prompt the user to continue.
+        //Assume that the user will enter valid integers for the grades.
+        //The application should only continue if the user agrees to.
+        //Grade Ranges:
+        //
+        //A : 100 - 88
+        //B : 87 - 80
+        //C : 79 - 67
+        //D : 66 - 60
+        //F : 59 - 0
+        //Solution
         Scanner sc= new Scanner(System.in);
-        System.out.println("What the number you want powered?");
-        int poweredNum = sc.nextInt();
-        System.out.println("Here is your table!");
-        System.out.println("Number | Squared | Cubed");
-        System.out.println("-------|---------|------" );
-
-        for(int i =1; i<= poweredNum;i++){
-            int squared = i*i;
-            int cubed = i*i*i;
-            System.out.printf("%d | %d | %d \n", i,squared,cubed);
+        System.out.println("What was your grade?");
+        int userGrade = sc.nextInt();
+        System.out.println("Grade Ranges:");
+        for(int i =0; i < 1; i++){
+            if(userGrade <100 && userGrade > 88 ){
+                System.out.println("A: 100-88");
+            }else if(userGrade <87 && userGrade > 80 ){
+                System.out.println("B: 87-80");
+            }else if(userGrade <79 && userGrade > 67 ){
+                System.out.println("C: 79-67");
+            }else if(userGrade <66 && userGrade > 60 ){
+                System.out.println("D: 66-60");
+            }else if(userGrade <59){
+                System.out.println("F: 59-0");
+            }
         }
-
-
     }
 }
