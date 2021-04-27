@@ -63,10 +63,15 @@ public class Console_IO_Lecture {
         String name = "Kelvon";
         System.out.printf("Hello Mr. %s\n", name);
 
-        String dogName= "Rambo";
-        int years = 4;
+        String dogName = "Rambo";
+        int dogYears = 4;
 
-        System.out.printf("My dogs name is %s, he is my favorite and he is %d years old. ", dogName, years);
+        System.out.printf("My dogs name is %s, he is my favorite and he is %d years old. ", dogName, dogYears);
+
+        String catName = "Loki";
+        int catYears = 3;
+
+        System.out.printf("My cats name is %s, he is my girlfriend's cat he is %d years old", catName, catYears);
     }
 }
 
