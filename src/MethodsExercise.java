@@ -10,6 +10,7 @@ public class MethodsExercise {
         System.out.println(multiplyNums2(10, 10));
 //        System.out.println(getInteger(1, 10));
         calculateFactorialNum();
+        diceRoll();
     }
 
     //Basic Arithmetic
@@ -104,12 +105,26 @@ public class MethodsExercise {
 
 }
 
-        public static void diceRoll(){
+        public static void diceRoll() {
             Scanner sc = new Scanner(System.in);
-        System.out.print("How many dice do you want to roll?");
-       int  numDice= sc.nextInt();
+            System.out.print("How many side do you want on your dice?");
+            int numSides = sc.nextInt();
+            int diceOne = numSides(input);
+            int diceTwo = numSides(input);
 
+
+            for (int i = 0; i < numDice; i++) {
+                int diceRoll = (int) (Math.random() * 6 - 1 + 1) + 1;
+
+                switch (diceRoll) {
+                    case 1 -> System.out.println("Rolled a one!");
+                    case 2 -> System.out.println("Rolled a two!");
+                    case 3 -> System.out.println("Rolled a three");
+                    case 4 -> System.out.println("Rolled a four!");
+                    case 5 -> System.out.println("Rolled a five!");
+                    case 6 -> System.out.println("Rolled a six!");
+                }
+            }
         }
-
     }
 
