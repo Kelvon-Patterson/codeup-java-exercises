@@ -11,6 +11,7 @@ public class MethodsExercise {
 //        System.out.println(getInteger(1, 10));
         calculateFactorialNum();
         diceRoll();
+        rollAgain();
     }
 
     //Basic Arithmetic
@@ -109,22 +110,34 @@ public class MethodsExercise {
             Scanner sc = new Scanner(System.in);
             System.out.print("How many side do you want on your dice?");
             int numSides = sc.nextInt();
-            int diceOne = numSides(input);
-            int diceTwo = numSides(input);
+            int diceOneSides = numSides;
+            int diceTwoSides = numSides;
+            int diceRoll1 = (int) (Math.random() * numSides - 1 + 1) + 1;
+            int diceRoll2 = (int) (Math.random() * numSides - 1 + 1) + 1;
+            System.out.println("Would you like to roll the dice? [Yes/No]");
+            String userReply = sc.next();
 
-
-            for (int i = 0; i < numDice; i++) {
-                int diceRoll = (int) (Math.random() * 6 - 1 + 1) + 1;
-
-                switch (diceRoll) {
-                    case 1 -> System.out.println("Rolled a one!");
-                    case 2 -> System.out.println("Rolled a two!");
-                    case 3 -> System.out.println("Rolled a three");
-                    case 4 -> System.out.println("Rolled a four!");
-                    case 5 -> System.out.println("Rolled a five!");
-                    case 6 -> System.out.println("Rolled a six!");
-                }
+            if (userReply.equalsIgnoreCase("Yes")) {
+                diceOneSides = diceRoll1;
+                diceTwoSides = diceRoll2;
+                System.out.println("Dice 1 landed on " + diceRoll1);
+                System.out.println("Dice 2 landed on " + diceRoll2);
+            } else if (userReply.equalsIgnoreCase("No")) {
+                System.out.println("I guess you don't wanna have fun");
             }
         }
+            public static void rollAgain() {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Would you like to roll again?[Yes,No]");
+                String userReply = sc.next();
+            if (userReply.equalsIgnoreCase("Yes")) {
+                diceRoll();
+            }else{
+                System.out.println("Suit yourself!");
+            }
+        }
+
+
+
     }
 
