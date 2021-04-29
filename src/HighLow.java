@@ -36,7 +36,7 @@ public class HighLow {
              }
         while (userGuesses < 10);
          if(userGuesses==10) {
-             System.out.println(" SORRY YOU LOST BECAUSE YOURE OUT OF GUESSES ");
+             System.out.println(" SORRY YOU LOST BECAUSE YOU'RE OUT OF GUESSES ");
          }
     }
 }

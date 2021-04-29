@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ControlFlowExercises {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         //Loop Basics
         //a. While
@@ -54,7 +54,7 @@ public class ControlFlowExercises {
 //            System.out.println("i = " + i);
 //            i=(int) Math.pow(i,2);
 //        }
-    //Fizzbuzz
+        //Fizzbuzz
         //
         //One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
         //
@@ -75,7 +75,7 @@ public class ControlFlowExercises {
 //           i++;
 //       }
 //        System.out.println(i);
-       //Display a table of powers.
+        //Display a table of powers.
         //
         //Prompt the user to enter an integer.
         //Display a table of squares and cubes from 1 to the value entered.
@@ -122,22 +122,23 @@ public class ControlFlowExercises {
         //D : 66 - 60
         //F : 59 - 0
         //Solution
-        Scanner sc= new Scanner(System.in);
-        System.out.println("What was your grade?");
-        int userGrade = sc.nextInt();
-        System.out.println("Grade Ranges:");
-        for(int i =0; i < 1; i++){
-            if(userGrade <100 && userGrade > 88 ){
-                System.out.println("A: 100-88");
-            }else if(userGrade <87 && userGrade > 80 ){
-                System.out.println("B: 87-80");
-            }else if(userGrade <79 && userGrade > 67 ){
-                System.out.println("C: 79-67");
-            }else if(userGrade <66 && userGrade > 60 ){
-                System.out.println("D: 66-60");
-            }else if(userGrade <59){
-                System.out.println("F: 59-0");
-            }
-        }
+//        Scanner sc= new Scanner(System.in);
+//        System.out.println("What was your grade?");
+//        int userGrade = sc.nextInt();
+//        System.out.println("Grade Ranges:");
+//        for(int i =0; i < 1; i++){
+//            if(userGrade <100 && userGrade > 88 ){
+//                System.out.println("A: 100-88");
+//            }else if(userGrade <87 && userGrade > 80 ){
+//                System.out.println("B: 87-80");
+//            }else if(userGrade <79 && userGrade > 67 ){
+//                System.out.println("C: 79-67");
+//            }else if(userGrade <66 && userGrade > 60 ){
+//                System.out.println("D: 66-60");
+//            }else if(userGrade <59){
+//                System.out.println("F: 59-0");
+//            }
+//        }
+
     }
 }
