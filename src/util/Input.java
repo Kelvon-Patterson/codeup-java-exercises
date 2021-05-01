@@ -76,7 +76,8 @@ return getInt;
         System.out.println("Pick a number with a decimal between 1.5 and 20.67");
         System.out.println( input.getDouble(1.5,20.67));
 
-
+        System.out.println("Pick any number with a decimal!!");
+        System.out.println("input.getDouble() = " + input.getDouble());
     }
 
 
