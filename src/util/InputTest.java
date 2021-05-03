@@ -6,8 +6,8 @@ public class InputTest {
         System.out.println("What is your name ?");
         System.out.println("Your name is "+ input.getString() + "!");
 
-        System.out.println("Is true = true and false =false?");
-        System.out.println(input.yesNo());
+
+        System.out.println(input.yesNo("Is true = true and false =false?"));
 
         System.out.println("Choose a number between 1 and 10 please.");
         System.out.println(input.getInt(1,10));
