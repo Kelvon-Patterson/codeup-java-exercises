@@ -15,7 +15,7 @@ public class ArrayExercises {
 
 
       for(Person person: people){
-          System.out.println("These are the people I love most " + person.getName());
+          System.out.println("My favorite people are " + person.getName() + " (:");
       }
     }
 }
