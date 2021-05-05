@@ -89,7 +89,7 @@ if(str.length()>=3) {
             return last + str + last;
         }
     }
-
+    //Return true if the given non-negative number is a multiple of 3 or a multiple of 5.
     public static boolean or35(int n) {
         if(n % 3==0 || n % 5 ==0){
             return true;
@@ -97,7 +97,16 @@ if(str.length()>=3) {
             return false;
         }
     }
-    //Return true if the given non-negative number is a multiple of 3 or a multiple of 5.
+//    Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so "kitten" yields"kikittenki". If the string length is less than 2, use whatever chars are there.
+    public  static String front22(String str) {
+        if(str.length() > 2){
+            String firstTwo = str.substring(0,2);
+            return firstTwo + str + firstTwo;
+        }else{
+            return str + str + str;
+        }
+    }
+
     public static void main(String[] args) {
 
         System.out.println("sumDouble() = " + sumDouble(9,9));
@@ -109,6 +118,7 @@ if(str.length()>=3) {
         System.out.println(front3("a"));
         System.out.println(backAround("read"));
         System.out.println(or35(100));
+        System.out.println(front22("kitten"));
         
     }
 
