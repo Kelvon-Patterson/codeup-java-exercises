@@ -66,6 +66,15 @@ public class Outsidepractice {
 
 
     }
+    public static String front3(String str) {
+
+if(str.length()>=3) {
+    String firstThreeLetters = str.substring(0,3);
+    return firstThreeLetters.repeat(3);
+}else{
+    return str+str+str;
+}
+}
 
 
     public static void main(String[] args) {
@@ -76,6 +85,7 @@ public class Outsidepractice {
         System.out.println("makes10(9,10) = " + makes10(9, 10));
         System.out.println(notString("is not"));
         System.out.println("frontBack(\"code\") = " + frontBack("code"));
+        System.out.println(front3("a"));
         
     }
 
