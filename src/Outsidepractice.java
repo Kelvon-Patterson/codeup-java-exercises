@@ -41,6 +41,32 @@ public class Outsidepractice {
     // public boolean makes10(int a, int b) {
     //  return (a == 10 || b == 10 || a+b == 10);
     //}
+//    Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
+
+    public static String notString(String str) {
+        if(str.startsWith("not")){
+            return str;
+        }else{
+            return "not " + str;
+        }
+    }
+    public static String frontBack(String str) {
+        if(str.length() < 2){
+            return str;
+        }
+        char[] ch =  str.toCharArray();
+
+        char temp = ch[0];
+
+        ch[0] = ch[ch.length - 1];
+        ch[ch.length - 1] = temp;
+
+        return String.valueOf(ch);
+
+
+
+    }
+
 
     public static void main(String[] args) {
 
@@ -48,6 +74,9 @@ public class Outsidepractice {
         System.out.println("diff21() = " + diff21(100));
         System.out.println("parrotTrouble(true,7) = " + parrotTrouble(true, 7));
         System.out.println("makes10(9,10) = " + makes10(9, 10));
+        System.out.println(notString("is not"));
+        System.out.println("frontBack(\"code\") = " + frontBack("code"));
+        
     }
 
 
