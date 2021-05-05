@@ -50,6 +50,7 @@ public class Outsidepractice {
             return "not " + str;
         }
     }
+    //Given a string, return a new string where the first and last chars have been exchanged.
     public static String frontBack(String str) {
         if(str.length() < 2){
             return str;
@@ -66,6 +67,7 @@ public class Outsidepractice {
 
 
     }
+    //Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.
     public static String front3(String str) {
 
 if(str.length()>=3) {
@@ -75,8 +77,27 @@ if(str.length()>=3) {
     return str+str+str;
 }
 }
+//Given a string, take the last char and return a new string with the last char added at the front and back, so "cat" yields "tcatt". The original string will be length 1 or more.
+    public static String backAround(String str) {
+        if(str.length()<2){
+            return str+str+str;
+        }else{
+            char [] ch= str.toCharArray();
 
+            char last = ch[ch.length-1];
 
+            return last + str + last;
+        }
+    }
+
+    public static boolean or35(int n) {
+        if(n % 3==0 || n % 5 ==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    //Return true if the given non-negative number is a multiple of 3 or a multiple of 5.
     public static void main(String[] args) {
 
         System.out.println("sumDouble() = " + sumDouble(9,9));
@@ -86,6 +107,8 @@ if(str.length()>=3) {
         System.out.println(notString("is not"));
         System.out.println("frontBack(\"code\") = " + frontBack("code"));
         System.out.println(front3("a"));
+        System.out.println(backAround("read"));
+        System.out.println(or35(100));
         
     }
 
