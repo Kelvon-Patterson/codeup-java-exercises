@@ -106,7 +106,14 @@ if(str.length()>=3) {
             return str + str + str;
         }
     }
-
+//Given a string, return true if the string starts with "hi" and false otherwise.
+public static boolean startHi(String str) {
+    return str.startsWith("hi");
+}
+//Given two temperatures, return true if one is less than 0 and the other is greater than 100.
+public static boolean icyHot(int temp1, int temp2) {
+    return (temp1<0 && temp2 > 100)|| (temp1>100 && temp2 < 0);
+}
     public static void main(String[] args) {
 
         System.out.println("sumDouble() = " + sumDouble(9,9));
@@ -119,6 +126,8 @@ if(str.length()>=3) {
         System.out.println(backAround("read"));
         System.out.println(or35(100));
         System.out.println(front22("kitten"));
+        System.out.println(startHi("hilarious"));
+        System.out.println(icyHot(-1,100));
         
     }
 
