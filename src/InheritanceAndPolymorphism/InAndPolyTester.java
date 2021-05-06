@@ -51,15 +51,14 @@ public class InAndPolyTester {
 
    public static Vehicle spawnVehicle(String vehicleType, int maxSpeed){
         //Enhanced Switch Statement
-        Vehicle vehicle = switch (vehicleType.toLowerCase()) {
-            case "vehicle" -> new Vehicle(maxSpeed);
-            case "bus" -> new Bus(maxSpeed);
-            case "jet" -> new Jet(maxSpeed);
-            default -> null;
-        };
-        //here we can use the .toLowerCase method to keep our
+       //here we can use the .toLowerCase method to keep our
 
-       return vehicle;
+       return switch (vehicleType.toLowerCase()) {
+           case "vehicle" -> new Vehicle(maxSpeed);
+           case "bus" -> new Bus(maxSpeed);
+           case "jet" -> new Jet(maxSpeed);
+           default -> null;
+       };
    }
    //Old way of Switch statement.
 //    public static Vehicle spawnVehicle(String vehicleType, int maxSpeed){

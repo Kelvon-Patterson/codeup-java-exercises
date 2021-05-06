@@ -20,10 +20,8 @@ public class HighLow {
             if (userNum1 < randomNum) {
                 System.out.println("HIGHER");
 
-                continue;
             } else if (userNum1 > randomNum) {
                 System.out.println("LOWER");
-                continue;
             } else if(userGuesses==10){
                 System.out.println(" SORRY YOU LOST BECAUSE YOURE OUT OF GUESSES ");
                 break;

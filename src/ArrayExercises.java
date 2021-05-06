@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class ArrayExercises {
-
+//we're creating a new array here to add a person to the copy of the original array
 public static Person[] addPerson(Person[] people, Person person){
 Person[] newPerson = Arrays.copyOf(people,people.length+1);
  newPerson[newPerson.length-1] = person;

@@ -1,8 +1,13 @@
 package movies;
 
-class Movie {
+import java.util.Arrays;
+
+public class Movie {
+
     private String name;
     private String category;
+
+
     //Name Getter
     public String getName(){
         return name;
@@ -13,6 +18,7 @@ class Movie {
     }
     //Category Getter
     public String getCategory(){
+
         return category;
     }
     //Category Setter
@@ -20,9 +26,11 @@ class Movie {
         this.category= newCategory;
     }
     public Movie(String movieName, String category){
-        name=movieName;
-        category="Unassigned";
+        this.name=movieName;
+        this.category= category;
     }
+
+
 
     public static void main(String[] args) {
 
