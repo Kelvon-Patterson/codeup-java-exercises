@@ -1,13 +1,24 @@
 package shapes;
 
 public class ShapesTest {
-    public static void main(String[] args) {
-        Rectangle box1 = new Rectangle();
-        System.out.println("box1.getArea(5,4) = " + box1.getArea(5, 4));
-        System.out.println("box1.getPerimeter(5,4) = " + box1.getPerimeter(5, 4));
 
-        Rectangle box2 = new Square(5);
-        System.out.println("box2.getArea(5,5) = " + box2.getArea(5, 5));
-        System.out.println("box2.getPerimeter(5,5) = " + box2.getPerimeter(5, 5));
+
+    public static void main(String[] args) {
+
+        Measurable myShape;
+
+         myShape = new Rectangle(4,8);
+        System.out.println("myRectangle.getArea() = " + myShape.getArea());
+        System.out.println("myRectangle.getPerimeter() = " + myShape.getPerimeter());
+
+
+        myShape = new Square(4,4);
+        System.out.println("mySquare.getPerimeter() = " + myShape.getPerimeter());
+        System.out.println("mySquare.getArea() = " + myShape.getArea());
+
+// 9)
+// The code will fail to compile when leaving off getPerimeter() because it will have no method to call to grab the perimeter therefore it wont have a value to compile.
+        //10
+        //i was not able to call getLength or getWidth on myShape probably becasuse it is being implemented in the interface Measurable.
     }
 }
