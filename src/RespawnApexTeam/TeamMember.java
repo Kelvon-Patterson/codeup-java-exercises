@@ -10,5 +10,6 @@ public abstract class TeamMember {
         this.department = department;
         this.age = age;
     }
+    public abstract void displayInfo();
 
 }

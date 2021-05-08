@@ -8,21 +8,26 @@ public class Developers extends TeamMember implements DailyTask {
         super(name, department, age);
     }
 
+    @Override
+    public void displayInfo() {
+
+    }
+
 
     public boolean clockedIn() {
         Scanner scanner = new Scanner(System.in);
         String clockingIn = scanner.nextLine();
-        System.out.println("Are you clocking in? [Yes/No");
-        if (clockingIn.equalsIgnoreCase("Yes")) {
-            return true;
-        }else{
-            return false;
-        }
+        System.out.println("Are you clocking in? [Yes/No]");
+        return clockingIn.equalsIgnoreCase("Yes");
     }
 
 
-    public String logIn() {
-        return "You are logged into your computer";
+    public boolean logIn() {
+        if (clockedIn()) {
+            return true;
+        }else{
+            return clockedIn();
+        }
     }
 
     public String work(){
@@ -57,5 +62,10 @@ public class Developers extends TeamMember implements DailyTask {
 
     public String devMeeting() {
         return "Dev meeting at 9:30 a.m.";
+    }
+
+    @Override
+    public String greeting() {
+        return "Hello there !";
     }
 }

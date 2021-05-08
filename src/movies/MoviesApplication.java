@@ -4,15 +4,17 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MoviesApplication  {
-    Scanner sc = new Scanner(System.in);
-    String choice = sc.next();
-    public static Movie[] addMovie(Movie[] movies, Movie choice){ Movie[] newMovie = Arrays.copyOf(movies,movies.length+1);
-        newMovie[newMovie.length-1] = choice;
+
+    public static Movie[] addMovie(Movie[] movies, String choiceNewMovie){
+        Scanner sc = new Scanner(System.in);
+         choiceNewMovie = sc.next();
+        Movie[] newMovie = Arrays.copyOf(movies,movies.length+1);
+        newMovie[newMovie.length-1] = choiceNewMovie;
         return newMovie;
     }
-public static void userChoiceAddMovie(){
+public static String userChoiceAddMovie(){
     Scanner sc = new Scanner(System.in);
-    String choice = sc.next();
+   return sc.nextLine();
 }
 
 
@@ -53,10 +55,11 @@ public static void userChoiceAddMovie(){
             }
 
             System.out.println("Would you like to add a movie? [Yes/No]");
-            userChoiceAddMovie();
-//            addMovie();
-
-
+            if(userChoiceAddMovie().equalsIgnoreCase("yes")){
+                System.out.println("What movie would you like to add?");
         }
+            addMovie(movies,choice);
+
+    }
     }
 
