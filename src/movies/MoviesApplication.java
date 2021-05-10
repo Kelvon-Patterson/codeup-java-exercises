@@ -9,7 +9,7 @@ public class MoviesApplication  {
         Scanner sc = new Scanner(System.in);
          choiceNewMovie = sc.next();
         Movie[] newMovie = Arrays.copyOf(movies,movies.length+1);
-        newMovie[newMovie.length-1] = choiceNewMovie;
+//        newMovie[newMovie.length-1] = choiceNewMovie;
         return newMovie;
     }
 public static String userChoiceAddMovie(){

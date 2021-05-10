@@ -47,19 +47,22 @@ return getInt;
     public double getDouble(double min, double max){
         System.out.printf("Enter a double between %s and %s", min, max);
         double getDouble;
+        try{
         do{
-            getDouble = scanner.nextDouble();
+            getDouble = Double.valueOf(getString());
             System.out.printf("Enter a number between %d and %d", min, max);
-            double userInput = scanner.nextDouble();
+            double userInput = Double.valueOf(getString());
             if(userInput <min || userInput > max){
                 System.out.println("Sorry that number is not in the range of numbers we asked for...");
             }else if (userInput > min && userInput <max){
                 System.out.println("Thanks ! The number in range you entered is " + getDouble);
-                break;
             }
         }while(true);
         return getDouble;
-    }
+    }catch (Exception e){
+
+        }
+
     public double getDouble(String prompt){
         System.out.println(prompt);
         return this.scanner.nextDouble();
