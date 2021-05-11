@@ -3,11 +3,11 @@ package util;
 public class InputTest {
     public static void main(String[] args) {
         Input input= new Input();
-        System.out.println("What is your name ?");
-        System.out.println("Your name is "+ input.getString() + "!");
-
-
-        System.out.println(input.yesNo("Is true = true and false =false?"));
+//        System.out.println("What is your name ?");
+//        System.out.println("Your name is "+ input.getString() + "!");
+//
+//
+//        System.out.println(input.yesNo("Is true = true and false =false?"));
 
         System.out.println("Choose a number between 1 and 10 please.");
         System.out.println(input.getInt(1,10));

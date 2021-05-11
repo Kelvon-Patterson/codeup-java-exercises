@@ -25,43 +25,49 @@ public class Input {
     public  int getInt(int min, int max){
         System.out.printf("enter a number between %d and %d", min, max);
         int getInt;
-        do{
-            getInt = scanner.nextInt();
+        try {
+            getInt = Integer.valueOf(getString());
             System.out.printf("Enter a number between %d and %d ",min,max);
-            if(getInt <min || getInt >max){
-            System.out.println("Sorry that's not in the range we asked...");
-        }else if(getInt >min && getInt <max){
+            int userInput = Integer.valueOf(getString());
+            if(userInput >min && userInput <max){
                 System.out.println("Thank you! The number you entered is " + getInt);
-                break;
+            }else{
+                return getInt;
             }
 
-        }while(true);
-return getInt;
-    }
+
+            return getInt;
+        }catch (Exception e){
+            System.out.println("Exception occurred!");
+        }
+        return getInt(1,10);
+        }
+
     
     public int getInt(String prompt){
         System.out.println(prompt);
         return this.scanner.nextInt();
     }
 
-    public double getDouble(double min, double max){
+    public double getDouble(double min, double max) {
         System.out.printf("Enter a double between %s and %s", min, max);
         double getDouble;
-        try{
-        do{
+
+        try {
             getDouble = Double.valueOf(getString());
             System.out.printf("Enter a number between %d and %d", min, max);
             double userInput = Double.valueOf(getString());
-            if(userInput <min || userInput > max){
-                System.out.println("Sorry that number is not in the range of numbers we asked for...");
-            }else if (userInput > min && userInput <max){
+             if (userInput > min && userInput < max) {
                 System.out.println("Thanks ! The number in range you entered is " + getDouble);
+            }else{
+                 return getDouble;
             }
-        }while(true);
-        return getDouble;
-    }catch (Exception e){
 
+        } catch(Exception e){
+            System.out.println("Sorry There Was An Exeption!");
         }
+     return getDouble(1,10);
+    }
 
     public double getDouble(String prompt){
         System.out.println(prompt);
