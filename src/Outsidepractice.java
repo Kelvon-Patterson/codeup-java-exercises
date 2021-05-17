@@ -48,6 +48,16 @@ public class Outsidepractice {
                 (Math.abs(200 - n) <= 10));
     }
 
+  //  Given 2 int values, return true if one is negative and one is positive. Except if the parameter "negative" is true, then return true only if both are negative.
+
+    public static boolean posNeg(int a, int b, boolean negative) {
+        if(negative){
+            return (a < 0 && b< 0);
+        }else{
+            return   (a < 0 && b > 0) || (a > 0 && b < 0);
+        }
+    }
+
 
 //    Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
 
@@ -137,6 +147,7 @@ public static boolean icyHot(int temp1, int temp2) {
         System.out.println(startHi("hilarious"));
         System.out.println(icyHot(-1,100));
         System.out.println(nearHundred(93));
+        System.out.println(posNeg(1,-1, false));
         
     }
 
