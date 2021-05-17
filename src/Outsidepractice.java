@@ -41,6 +41,14 @@ public class Outsidepractice {
     // public boolean makes10(int a, int b) {
     //  return (a == 10 || b == 10 || a+b == 10);
     //}
+   // Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.
+
+    public static boolean nearHundred(int n){
+        return ((Math.abs(100 - n) <= 10) ||
+                (Math.abs(200 - n) <= 10));
+    }
+
+
 //    Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
 
     public static String notString(String str) {
@@ -128,6 +136,7 @@ public static boolean icyHot(int temp1, int temp2) {
         System.out.println(front22("kitten"));
         System.out.println(startHi("hilarious"));
         System.out.println(icyHot(-1,100));
+        System.out.println(nearHundred(93));
         
     }
 
