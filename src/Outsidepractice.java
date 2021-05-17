@@ -58,6 +58,13 @@ public class Outsidepractice {
         }
     }
 
+  //  We'll say that a number is "teen" if it is in the range 13..19 inclusive. Given 2 int values, return true if one or the other is teen, but not both.
+
+    public static boolean loneTeen(int a, int b) {
+        boolean aTeen = (a >= 13 && a <= 19);
+        boolean bTeen = (b >= 13 && b <= 19);
+        return (aTeen && !bTeen) || (!aTeen && bTeen);
+    }
 
 //    Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
 
@@ -148,6 +155,7 @@ public static boolean icyHot(int temp1, int temp2) {
         System.out.println(icyHot(-1,100));
         System.out.println(nearHundred(93));
         System.out.println(posNeg(1,-1, false));
+        System.out.println(loneTeen(13,99));
         
     }
 
