@@ -66,6 +66,13 @@ public class Outsidepractice {
         return (aTeen && !bTeen) || (!aTeen && bTeen);
     }
 
+    public static String delDel(String str){
+       if(str.length()>=4 && str.substring(1,4).equalsIgnoreCase("del")){
+           return str.substring(0,1) + str.substring(4);
+       }
+       return str;
+    }
+
 //    Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
 
     public static String notString(String str) {
@@ -156,6 +163,7 @@ public static boolean icyHot(int temp1, int temp2) {
         System.out.println(nearHundred(93));
         System.out.println(posNeg(1,-1, false));
         System.out.println(loneTeen(13,99));
+        System.out.println(delDel("aadelbb"));
         
     }
 
