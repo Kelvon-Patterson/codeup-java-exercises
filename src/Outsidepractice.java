@@ -13,7 +13,7 @@ public class Outsidepractice {
     public static int diff21(int n){
         int diff= n-21;
         if(n > 21){
-            return diff *2;
+            return Math.abs(diff* 2);
         }else{
             return diff;
         }

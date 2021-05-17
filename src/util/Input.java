@@ -64,7 +64,7 @@ public class Input {
             }
 
         } catch(Exception e){
-            System.out.println("Sorry There Was An Exeption!");
+            System.out.println("Sorry There Was An Exception!");
         }
      return getDouble(1,10);
     }
@@ -74,6 +74,16 @@ public class Input {
         return this.scanner.nextDouble();
     }
 
-
+public String getBinary(){
+try{
+    Scanner scan = new Scanner(System.in);
+    String binaryString = scan.nextLine();
+    int valOf = Integer.valueOf(binaryString,2);
+    System.out.println(valOf);
+}catch (NumberFormatException e){
+    System.out.println("Sorry that binary is not valid!");
+}
+return "This is a binary converted to a Integer";
+}
 
 }
