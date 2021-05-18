@@ -191,6 +191,21 @@ public static boolean icyHot(int temp1, int temp2) {
 //            return str.substring(0,3).repeat(n);
 //        }
     }
+
+  //  Count the number of "xx" in the given string. We'll say that overlapping is allowed, so "xxx" contains 2 "xx".
+    public static int countXX(String str){
+        int count = 0;
+        for(int i=0; i <str.length(); i++){
+            //here we are grabbing the substring at the index of i- i+2 to grab the two charachters in a row at index. the we check to see if it is equal to "xx" and if it is the we increment the count up 1.
+            if(str.substring(i,i+2).equalsIgnoreCase("xx")){
+                count++;
+            }
+        }
+        return count;
+    }
+
+
+
     public static void main(String[] args) {
 
         System.out.println("sumDouble() = " + sumDouble(9,9));
@@ -211,6 +226,7 @@ public static boolean icyHot(int temp1, int temp2) {
         System.out.println(delDel("aadelbb"));
         System.out.println(stringTimes("Hello",5));
         System.out.println(frontTimes("Ab", 3));
+        System.out.println(countXX("xxx"));
     }
 
 
