@@ -1,4 +1,7 @@
 public class Outsidepractice {
+
+    //WARM UP
+
     //Given two int values, return their sum. Unless the two values are the same, then return double their sum.
     public static int sumDouble(int a, int b) {
         int sum = a+b;
@@ -146,6 +149,48 @@ public static boolean startHi(String str) {
 public static boolean icyHot(int temp1, int temp2) {
     return (temp1<0 && temp2 > 100)|| (temp1>100 && temp2 < 0);
 }
+
+//STRINGS
+//Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+
+
+    public static String stringTimes(String str, int n){
+        //My solution:
+        return str.repeat(n);
+        //CODING BAT SOLUTION
+        //public String stringTimes(String str, int n) {
+        //  String result = "";
+        //  for (int i=0; i<n; i++) {
+        //    result = result + str;  // could use += here
+        //  }
+        //  return result;
+        //}
+    }
+
+
+//    Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front;
+
+    public static String frontTimes(String str, int n) {
+//        String firstThree = str.substring(0, 3);
+        //MY SECONDARY SOLUTION TO THIS PROBLEM
+        String result = "";
+        if(str.length() >=3){
+            for(int i = 0; i<n; i++){
+                result+= str.substring(0,3);
+            }
+        }else if(str.length() <=2){
+            for(int i=0; i<n; i++){
+                result+=str;
+            }
+        }
+        return result;
+        //MY INITIAL SOLUTION TO THIS PROBLEM
+//        if(str.length()<=2){
+//            return str.repeat(n);
+//        }else{
+//            return str.substring(0,3).repeat(n);
+//        }
+    }
     public static void main(String[] args) {
 
         System.out.println("sumDouble() = " + sumDouble(9,9));
@@ -164,7 +209,8 @@ public static boolean icyHot(int temp1, int temp2) {
         System.out.println(posNeg(1,-1, false));
         System.out.println(loneTeen(13,99));
         System.out.println(delDel("aadelbb"));
-        
+        System.out.println(stringTimes("Hello",5));
+        System.out.println(frontTimes("Ab", 3));
     }
 
 
