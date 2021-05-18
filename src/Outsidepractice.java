@@ -195,16 +195,31 @@ public static boolean icyHot(int temp1, int temp2) {
   //  Count the number of "xx" in the given string. We'll say that overlapping is allowed, so "xxx" contains 2 "xx".
     public static int countXX(String str){
         int count = 0;
-        for(int i=0; i <str.length(); i++){
-            //here we are grabbing the substring at the index of i- i+2 to grab the two charachters in a row at index. the we check to see if it is equal to "xx" and if it is the we increment the count up 1.
-            if(str.substring(i,i+2).equalsIgnoreCase("xx")){
+        for(int i=0; i <str.length()-1; i++){
+            if(str.charAt(i)=='x' && str.charAt(i + 1 )=='x'){
                 count++;
             }
         }
         return count;
     }
 
-
+//    public static boolean doubleX(String str) {
+//       for(int i =0; i< str.length()-1;i++){
+//           if(str.charAt(i) == 'x' && str.charAt(i+1) == 'x'){
+//               return true;
+//               break;
+//           }
+//       }
+//
+//    }
+    //Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
+public static String stringBits(String str) {
+    String skipChar ="";
+    for(int i =0; i < str.length(); i+=2){
+        skipChar+= str.charAt(i);
+    }
+    return skipChar;
+}
 
     public static void main(String[] args) {
 
@@ -226,7 +241,8 @@ public static boolean icyHot(int temp1, int temp2) {
         System.out.println(delDel("aadelbb"));
         System.out.println(stringTimes("Hello",5));
         System.out.println(frontTimes("Ab", 3));
-        System.out.println(countXX("xxx"));
+        System.out.println(countXX("xxxx"));
+        System.out.println(stringBits("Heeololeo"));
     }
 
 
