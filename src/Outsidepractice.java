@@ -220,6 +220,15 @@ public static String stringBits(String str) {
     }
     return skipChar;
 }
+    public static String stringSplosion(String str) {
+        String result = "";
+        String result1="";
+        for(int i = 0; i < str.length(); i++){
+            result += str.charAt(i);
+            result1 += result;
+        }
+        return result1;
+    }
 
     public static void main(String[] args) {
 
@@ -243,6 +252,7 @@ public static String stringBits(String str) {
         System.out.println(frontTimes("Ab", 3));
         System.out.println(countXX("xxxx"));
         System.out.println(stringBits("Heeololeo"));
+        System.out.println(stringSplosion("Code"));
     }
 
 
