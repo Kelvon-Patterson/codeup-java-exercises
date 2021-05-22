@@ -230,6 +230,18 @@ public static String stringBits(String str) {
         return result1;
     }
 
+   // Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
+   public static boolean mixStart(String str) {
+     return str.contains("ix");
+    }
+
+   // Given a string, return a string made of the first 2 chars (if present), however include first char only if it is 'o' and include the second only if it is 'z', so "ozymandias" yields "oz".
+
+    public static String startOz(String str){
+
+    }
+
+
     public static void main(String[] args) {
 
         System.out.println("sumDouble() = " + sumDouble(9,9));
@@ -253,6 +265,9 @@ public static String stringBits(String str) {
         System.out.println(countXX("xxxx"));
         System.out.println(stringBits("Heeololeo"));
         System.out.println(stringSplosion("Code"));
+        System.out.println(mixStart("mix snacks"));
+        System.out.println(mixStart("pix snacks"));
+        System.out.println(mixStart("piz snacks"));
     }
 
 
