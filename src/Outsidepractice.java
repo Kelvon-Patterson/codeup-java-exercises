@@ -251,6 +251,17 @@ public static String stringBits(String str) {
         return result;
     }
 
+    //Given three int values, a b c, return the largest.
+
+    public static int intMax(int a, int b, int c){
+        if(a > b && a> c){
+            return a;
+        }else if (b > a && b > c){
+            return b;
+        }else{
+            return c;
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -281,6 +292,8 @@ public static String stringBits(String str) {
         System.out.println(startOz("ozymandias"));
         System.out.println(startOz("bzoo"));
         System.out.println(startOz("oxx"));
+        System.out.println(intMax(1,2,3));
+        System.out.println(intMax(-3,-1,-2));
     }
 
 
