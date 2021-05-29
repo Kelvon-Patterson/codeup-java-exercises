@@ -276,6 +276,9 @@ public static String stringBits(String str) {
         return 0;
     }
 
+    public static int divide(int a,int b){
+        return a / b;
+    }
     public static void main(String[] args) {
 
         System.out.println("sumDouble() = " + sumDouble(9,9));
