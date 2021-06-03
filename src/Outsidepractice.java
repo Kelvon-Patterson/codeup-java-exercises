@@ -276,6 +276,19 @@ public static String stringBits(String str) {
         return 0;
     }
 
+    public static boolean arrayFront9(int[] nums) {
+        int last = nums.length;
+
+        if (last > 4) last = 4;
+
+        for (int i=0; i<last; i++) {
+            if (nums[i] == 9)
+                return true;
+        }
+
+        return false;
+    }
+
     public static int divide(int a,int b){
         return a / b;
     }
@@ -310,6 +323,7 @@ public static String stringBits(String str) {
         System.out.println(startOz("oxx"));
         System.out.println(intMax(1,2,3));
         System.out.println(intMax(-3,-1,-2));
+//        System.out.println(arrayFront9(int [] ={1, 2, 9, 3, 4});
     }
 
 
