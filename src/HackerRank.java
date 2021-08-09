@@ -1,7 +1,10 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class HackerRank {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
         int i = scan.nextInt();
 
@@ -25,5 +28,16 @@ public class HackerRank {
         System.out.println("String: " + s);
         System.out.println("Double: " + d);
         System.out.println("Int: " + i);
+
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+        N = 2;
+
+        for( i = 0; i < 10; i++){
+           int result = N*i;
+            System.out.println(N + " x " + i +" = " + result );
+        }
+        bufferedReader.close();
     }
 }

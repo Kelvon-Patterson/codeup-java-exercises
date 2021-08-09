@@ -12,7 +12,6 @@
 # IntelliJ
 .idea/*
 *.iml
-HackerRank.java
 # Compiled output
 *.class
 out/*
