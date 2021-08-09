@@ -1,4 +1,5 @@
 import java.util.Map;
+import java.util.Scanner;
 
 public class Outsidepractice {
 
@@ -303,6 +304,18 @@ public static String stringBits(String str) {
     }
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+
+        // Write your code here.
+
+        double d = scan.nextDouble();
+        scan.nextLine();
+        String s = scan.nextLine();
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
         System.out.println("sumDouble() = " + sumDouble(9,9));
         System.out.println("diff21() = " + diff21(100));
         System.out.println("parrotTrouble(true,7) = " + parrotTrouble(true, 7));
