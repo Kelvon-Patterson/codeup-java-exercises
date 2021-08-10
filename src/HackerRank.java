@@ -25,6 +25,9 @@ public class HackerRank {
 
         }
     }
+    int n = 100;
+    String s = Integer.toString(n);
+
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(System.in);
         int t = in.nextInt();
