@@ -317,6 +317,7 @@ public static String stringBits(String str) {
         String frontOut= out.substring(0,2);
         String endOut = out.substring(2);
         return frontOut + word + endOut;
+
     }
     public static void main(String[] args) {
 
