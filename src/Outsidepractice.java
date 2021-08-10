@@ -311,6 +311,7 @@ public static String stringBits(String str) {
     }
     public String makeTags(String tag, String word) {
         return '<'+tag+'>' + word + "</"+tag+'>';
+
     }
 
     public static void main(String[] args) {
