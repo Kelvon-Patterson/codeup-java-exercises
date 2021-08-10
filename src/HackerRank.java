@@ -83,4 +83,12 @@ public class HackerRank {
         }
 
     }
+    Scanner sc = new scannner(System.in);
+    int counter = 1;
+
+        while(sc.hasNext())
+                System.out.print(counter + " " + sc.nextline());
+    counter++;
+}
+        sc.close();
 }
