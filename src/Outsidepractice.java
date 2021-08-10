@@ -313,7 +313,11 @@ public static String stringBits(String str) {
         return '<'+tag+'>' + word + "</"+tag+'>';
 
     }
-
+    public String makeOutWord(String out, String word) {
+        String frontOut= out.substring(0,2);
+        String endOut = out.substring(2);
+        return frontOut + word + endOut;
+    }
     public static void main(String[] args) {
 
 
