@@ -302,6 +302,10 @@ public static String stringBits(String str) {
     public static int divide(int a,int b){
         return a / b;
     }
+
+    public String helloName(String name) {
+        return "Hello " + name +'!';
+    }
     public static void main(String[] args) {
 
 
