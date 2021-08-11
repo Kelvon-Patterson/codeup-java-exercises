@@ -47,6 +47,21 @@ public class HackerRank {
     String s = Integer.toString(n);
 
     public static void main(String[] args) throws IOException {
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        StringBuilder input = new StringBuilder();
+
+        input.append(A);
+        input.reverse();
+
+        if(A.equalsIgnoreCase(String.valueOf(input))){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+
+
         Scanner scanner = new Scanner(System.in);
         double payment = scanner.nextDouble();
         scanner.close();
