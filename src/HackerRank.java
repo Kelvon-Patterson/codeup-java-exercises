@@ -109,7 +109,7 @@ public class HackerRank {
         scan.nextLine();
         String s = scan.nextLine();
 
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("================================");
         for (i = 0; i < 3; i++) {
             String s1 = sc.next();
