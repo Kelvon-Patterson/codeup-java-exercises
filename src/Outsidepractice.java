@@ -326,9 +326,20 @@ public static String stringBits(String str) {
     }
     public String firstHalf(String str) {
         int half = str.length() / 2;
-        String firstHalf = str.substring(0,half);
-        return firstHalf;
+        return  str.substring(0,half);
+
     }
+
+    public String withoutEnd(String str) {
+        if (str != null && str.length() > 2) {
+            str = str.substring(1, str.length() - 1);
+            return str;
+        }else{
+            return "";
+        }
+
+    }
+
 
     public static void main(String[] args) {
 
