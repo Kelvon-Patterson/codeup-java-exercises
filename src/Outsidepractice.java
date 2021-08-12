@@ -320,6 +320,15 @@ public static String stringBits(String str) {
 
 
     }
+    public String extraEnd(String str) {
+        String endTwo = str.substring(str.length()-2);
+        return endTwo + endTwo + endTwo;
+    }
+    public String firstHalf(String str) {
+        int half = str.length() / 2;
+        String firstHalf = str.substring(0,half);
+        return firstHalf;
+    }
 
     public static void main(String[] args) {
 
