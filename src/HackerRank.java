@@ -5,6 +5,8 @@ import java.text.NumberFormat;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.Scanner;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 public class HackerRank {
 
