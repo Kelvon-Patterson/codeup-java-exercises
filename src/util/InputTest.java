@@ -31,7 +31,7 @@ public class InputTest {
 //        }catch (NumberFormatException e){
 //            System.out.println("Sorry that binary is not valid!");
 //        }
-        System.out.println(input.getBinary());+
+        System.out.println(input.getBinary());
     }
 
 
