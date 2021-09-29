@@ -398,6 +398,15 @@ public static String stringBits(String str) {
 
         return count;
     }
+
+    public String nonStart(String a, String b){
+     String restA = a.substring(1);
+     String restB = b.substring(1);
+     return restA + restB;
+
+    }
+
+
     public static void main(String[] args) {
 
 
