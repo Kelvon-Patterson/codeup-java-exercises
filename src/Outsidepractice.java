@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -406,39 +408,67 @@ public static String stringBits(String str) {
 
     }
 
+    public String theEnd(String str, boolean front){
+   if(front){
+       return str.substring(0,1);
+   }else{
+       return str.substring(str.length()-1);
+   }
+
+    }
+
+
 
     public static void main(String[] args) {
 
+        //TODO:Write a Java program to create a new array list, add some elements (string) and print out the collection.
+        List<String> colors = new ArrayList<>();
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Yellow");
+        colors.add("Green");
+        System.out.println(colors);
 
-        System.out.println("sumDouble() = " + sumDouble(9,9));
-        System.out.println("diff21() = " + diff21(100));
-        System.out.println("parrotTrouble(true,7) = " + parrotTrouble(true, 7));
-        System.out.println("makes10(9,10) = " + makes10(9, 10));
-        System.out.println(notString("is not"));
-        System.out.println("frontBack(\"code\") = " + frontBack("code"));
-        System.out.println(front3("a"));
-        System.out.println(backAround("read"));
-        System.out.println(or35(100));
-        System.out.println(front22("kitten"));
-        System.out.println(startHi("hilarious"));
-        System.out.println(icyHot(-1,100));
-        System.out.println(nearHundred(93));
-        System.out.println(posNeg(1,-1, false));
-        System.out.println(loneTeen(13,99));
-        System.out.println(delDel("aadelbb"));
-        System.out.println(stringTimes("Hello",5));
-        System.out.println(frontTimes("Ab", 3));
-        System.out.println(countXX("xxxx"));
-        System.out.println(stringBits("Heeololeo"));
-        System.out.println(stringSplosion("Code"));
-        System.out.println(mixStart("mix snacks"));
-        System.out.println(mixStart("pix snacks"));
-        System.out.println(mixStart("piz snacks"));
-        System.out.println(startOz("ozymandias"));
-        System.out.println(startOz("bzoo"));
-        System.out.println(startOz("oxx"));
-        System.out.println(intMax(1,2,3));
-        System.out.println(intMax(-3,-1,-2));
+        //TODO:Write a Java program to iterate through all elements in a array list.
+
+        List<String> elements = new ArrayList<>();
+        elements.add("Car");
+        elements.add("Truck");
+        elements.add("Bus");
+        elements.add("Boat");
+        for(String element: elements){
+            System.out.println(element);
+        }
+
+//        System.out.println("sumDouble() = " + sumDouble(9,9));
+//        System.out.println("diff21() = " + diff21(100));
+//        System.out.println("parrotTrouble(true,7) = " + parrotTrouble(true, 7));
+//        System.out.println("makes10(9,10) = " + makes10(9, 10));
+//        System.out.println(notString("is not"));
+//        System.out.println("frontBack(\"code\") = " + frontBack("code"));
+//        System.out.println(front3("a"));
+//        System.out.println(backAround("read"));
+//        System.out.println(or35(100));
+//        System.out.println(front22("kitten"));
+//        System.out.println(startHi("hilarious"));
+//        System.out.println(icyHot(-1,100));
+//        System.out.println(nearHundred(93));
+//        System.out.println(posNeg(1,-1, false));
+//        System.out.println(loneTeen(13,99));
+//        System.out.println(delDel("aadelbb"));
+//        System.out.println(stringTimes("Hello",5));
+//        System.out.println(frontTimes("Ab", 3));
+//        System.out.println(countXX("xxxx"));
+//        System.out.println(stringBits("Heeololeo"));
+//        System.out.println(stringSplosion("Code"));
+//        System.out.println(mixStart("mix snacks"));
+//        System.out.println(mixStart("pix snacks"));
+//        System.out.println(mixStart("piz snacks"));
+//        System.out.println(startOz("ozymandias"));
+//        System.out.println(startOz("bzoo"));
+//        System.out.println(startOz("oxx"));
+//        System.out.println(intMax(1,2,3));
+//        System.out.println(intMax(-3,-1,-2));
 //        System.out.println(arrayFront9(int [] ={1, 2, 9, 3, 4});
     }
 
