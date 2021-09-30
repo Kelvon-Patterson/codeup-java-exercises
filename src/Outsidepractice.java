@@ -428,7 +428,7 @@ public static String stringBits(String str) {
         colors.add("Yellow");
         colors.add("Green");
         System.out.println(colors);
-
+        System.out.println("-------");
         //TODO:Write a Java program to iterate through all elements in a array list.
 
         List<String> elements = new ArrayList<>();
@@ -439,6 +439,20 @@ public static String stringBits(String str) {
         for(String element: elements){
             System.out.println(element);
         }
+        System.out.println("-------");
+        //TODO:Write a Java program to insert an element into the array list at the first position.
+        elements.add(0,"Airplane"); // Adding element into array at 0 index
+        elements.add("Helicopter");// Adding another element at last position.
+        for(String element: elements){
+            System.out.println(element);
+        }
+        System.out.println("-------");
+        //TODO:Write a Java program to retrieve an element (at a specified index) from a given array list.
+        System.out.println(elements.get(0)); // "getting" the first element from the array.
+        System.out.println("-------");
+
+        //TODO:
+
 
 //        System.out.println("sumDouble() = " + sumDouble(9,9));
 //        System.out.println("diff21() = " + diff21(100));
