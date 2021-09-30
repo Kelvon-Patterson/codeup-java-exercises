@@ -451,7 +451,12 @@ public static String stringBits(String str) {
         System.out.println(elements.get(0)); // "getting" the first element from the array.
         System.out.println("-------");
 
-        //TODO:
+        //TODO:Write a Java program to update specific array element by given element.
+        System.out.println(elements.set(0,"Blimp")); // updating element setting it to said string
+        System.out.println(elements.get(0)); // calling element after change is made
+        System.out.println("-------");
+
+
 
 
 //        System.out.println("sumDouble() = " + sumDouble(9,9));
