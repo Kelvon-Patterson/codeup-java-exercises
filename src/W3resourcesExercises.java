@@ -1,12 +1,12 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class W3resourcesExercises {
 
 
 
         public static void main(String[] args){
+
+                //TODO: JAVA COLLECTION : ARRAYLIST EXERCISES
 
                 //TODO:Write a Java program to create a new array list, add some elements (string) and print out the collection.
                 List<String> colors = new ArrayList<>();
@@ -51,7 +51,67 @@ public class W3resourcesExercises {
                 }
                 System.out.println("-------");
 
+                //TODO: Write a Java program to search an element in an array list.
+                System.out.println("index of Car element= " +elements.indexOf("Car")); // return index of Car element;
+                System.out.println("-------");
+                System.out.println("does the array list contain Car object? = " + elements.contains("Car")); // returns true if arrayList contains the object
+                System.out.println("-------");
 
+                //TODO: Write a Java program to sort a given array list.
+                System.out.println("Unsorted list");
+                for(String element: elements){
+                        System.out.println(element);
+                }
+                System.out.println("-------");
+                System.out.println("Unsorted list");
+                Collections.sort(elements); //sort statement passing the array list as an argument
+                for(String element: elements){
+                 System.out.println(element);
+                }
+                System.out.println("-------");
+
+                //TODO: Write a Java program to copy one array list into another.
+                List<String> List1 = new ArrayList<String>();
+                List1.add("1");
+                List1.add("2");
+                List1.add("3");
+                List1.add("4");
+                System.out.println("List1: " + List1);
+                System.out.println("-------");
+                List<String> List2 = new ArrayList<String>();
+                List2.add("A");
+                List2.add("B");
+                List2.add("C");
+                List2.add("D");
+                System.out.println("List2: " + List2);
+
+                Collections.copy(List1, List2); // Copy List2 to List1 list your copying to must have same or more elements then list being copied from.
+                System.out.println("Copy List to List2,\nAfter copy:");
+                System.out.println("List1: " + List1);
+                System.out.println("List2: " + List2);
+                System.out.println("-------");
+
+                //TODO: Write a Java program to shuffle elements in a array list.
+                System.out.println("unshuffled="+ elements);
+                Collections.shuffle(elements); // use collections class to shuffle elements
+                System.out.println("shuffled elements =" + elements);
+
+                //TODO:Write a Java program to reverse elements in a array list.
+                System.out.println("before reverse" + elements);
+                Collections.reverse(elements);
+                System.out.println("reversed elements=" + elements);
+
+                //TODO:Write a Java program to extract a portion of a array list.
+                System.out.println("before extraction" +elements);
+                List<String> subList = elements.subList(0,2);
+                System.out.println("first two of elements array list =  " + subList     );
+
+                //TODO:Write a Java program to compare two array lists.
+                System.out.println("does element have same objects as colors?=" +elements.contains(colors)); // here we can use the contains method to compare
+                System.out.println("does element have same objects as colors?=" + elements.equals(colors)); //here we can use the .equals method to compare
+                System.out.println("does element have same objects as colors?=" + elements.removeAll(colors));// here we can use the .removeAll method to compare
+                System.out.println("does element have same objects as colors?=" + elements.retainAll(colors));//here we can use the .retainAll method to compare
+                System.out.println("does element have same objects as colors?=" + elements.toString().equals(colors.toString())); // here we put the array list .toString then compare them using the .equals string method.
 
 
     }
