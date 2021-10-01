@@ -107,12 +107,36 @@ public class W3resourcesExercises {
                 System.out.println("first two of elements array list =  " + subList     );
 
                 //TODO:Write a Java program to compare two array lists.
-                System.out.println("does element have same objects as colors?=" +elements.contains(colors)); // here we can use the contains method to compare
-                System.out.println("does element have same objects as colors?=" + elements.equals(colors)); //here we can use the .equals method to compare
-                System.out.println("does element have same objects as colors?=" + elements.removeAll(colors));// here we can use the .removeAll method to compare
-                System.out.println("does element have same objects as colors?=" + elements.retainAll(colors));//here we can use the .retainAll method to compare
-                System.out.println("does element have same objects as colors?=" + elements.toString().equals(colors.toString())); // here we put the array list .toString then compare them using the .equals string method.
+                System.out.println("does element have same objects as colors?=" +elements.contains(colors));
+                System.out.println(".contains?" +elements);
+                System.out.println("-------");
+                // here we can use the contains method to compare
+                System.out.println("does element have same objects as colors?=" + elements.equals(colors));
+                System.out.println(".equals?" +elements);
+                System.out.println("-------");
+                //here we can use the .equals method to compare
+//                System.out.println("does element have same objects as colors?=" + elements.removeAll(colors));
+//                System.out.println(".removeAll?" +elements);
+//                System.out.println("-------");
+                // here we can use the .removeAll method to compare
+                // returns empty list if all the elements of first list match with elements of second list
+//                System.out.println("does element have same objects as colors?=" + elements.retainAll(colors));
+//                System.out.println(".retainAll?" +elements);
+//                System.out.println("-------");
+                //here we can use the .retainAll method to compare This method accepts a Collection as a parameter that contains elements to be retained in the list. It returns true if this list changed as a result of the call.
+                System.out.println("does element have same objects as colors?=" + elements.toString().equals(colors.toString()));
+                System.out.println(".toString? .equals?" +elements);
+                System.out.println("-------");
+                // here we put the array list .toString then compare them using the .equals string method.
+
+                //TODO:Write a Java program of swap two elements in an array list.
+                System.out.println("before swap=" + elements);
+                Collections.swap(elements, 0,4); // we use the collections method swap to switch methods around
+                System.out.println("After swap =" + elements);
+                System.out.println("-------");
+
+                //
 
 
-    }
+        }
 }
