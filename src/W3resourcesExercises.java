@@ -135,7 +135,28 @@ public class W3resourcesExercises {
                 System.out.println("After swap =" + elements);
                 System.out.println("-------");
 
-                //
+                //TODO:Write a Java program to join two array lists.
+                //create new array list
+                List <String> colorsAndElements = new ArrayList<>(); //create new array list
+//                colorsAndElements.addAll(colors); //add colors array list
+//                colorsAndElements.addAll(elements); //add elements array list
+//                System.out.println(colorsAndElements); // print out to show results of colorsAndElements array list
+                System.out.println("-------");
+
+                //TODO: Write a Java program to clone an array list to another.
+                ArrayList<String> colors1 = new ArrayList<>();
+                colors1.add("Red");
+                colors1.add("Black");
+                colors1.add("Green");
+                colors1.add("Pink");
+                colors1.add("Yellow");
+                System.out.println("original array list colors1 = " + colors1);
+                System.out.println("-------");
+                ArrayList<String> newColor1 = (ArrayList<String>) colors1.clone();
+                System.out.println("Cloned colors1 array list= " + newColor1);
+
+
+
 
 
         }
