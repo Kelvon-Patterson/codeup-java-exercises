@@ -154,6 +154,8 @@ public class W3resourcesExercises {
                 System.out.println("-------");
                 ArrayList<String> newColor1 = (ArrayList<String>) colors1.clone();
                 System.out.println("Cloned colors1 array list= " + newColor1);
+                System.out.println("-------");
+                //TODO: Write a Java program to empty an array list.
 
                 ArrayList<String> c1= new ArrayList<String>();
                 c1.add("Red");
@@ -164,7 +166,11 @@ public class W3resourcesExercises {
                 System.out.println("Original array list: " + c1);
                 c1.removeAll(c1);
                 System.out.println("Array list after remove all elements "+c1);
+                System.out.println("-------");
 
+               //TODO: Write a Java program to test an array list is empty or not.
+                System.out.println("Is c1 array list empty? "+ c1.isEmpty());
+                System.out.println("-------");
 
 
         }
