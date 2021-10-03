@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class W3resourcesExercises {
@@ -174,7 +175,7 @@ public class W3resourcesExercises {
 
                 //TODO:Write a Java program to trim the capacity of an array list the current list size.
 
-                ArrayList<String> names = new ArrayList<>();
+                ArrayList<String> names = new ArrayList<>(9);
                 names.add("Kelvon");
                 names.add("Amirah");
                 names.add("Emily");
@@ -183,7 +184,27 @@ public class W3resourcesExercises {
 
                 System.out.println("Original names array " + names);
                 names.trimToSize();
-                System.out.println("names array list trimed to size " + names);
+                //The trimToSize() method of ArrayList in Java trims the capacity of an ArrayList instance to be the list's current size. This method is used to trim an ArrayList instance to the number of elements it contains.
+                System.out.println("names array list trimmed to size " + names);
+                System.out.println("-------");
+
+                //TODO:Write a Java program to increase the size of an array list.
+
+                ArrayList<String> pets = new ArrayList<>(2);
+                pets.add("Rambo");
+                pets.add("Loki");
+                System.out.println("original " + pets);
+                pets.ensureCapacity(4);
+                pets.add("Athena");
+                pets.add("Leo");
+                System.out.println("pets = " + pets);
+
+                System.out.println("-------");
+
+                //TODO:Write a Java program to replace the second element of a ArrayList with the specified element
+                pets.set(1,"Midnight");
+                System.out.println("new pets array list = " + pets);
+                System.out.println("-------");
 
 
         }
