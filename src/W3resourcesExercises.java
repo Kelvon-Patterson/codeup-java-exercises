@@ -206,6 +206,12 @@ public class W3resourcesExercises {
                 System.out.println("new pets array list = " + pets);
                 System.out.println("-------");
 
+                //TODO:Write a Java program to print all the elements of a ArrayList using the position of the elements.
+                System.out.println("pets.get(0) = " + pets.get(0));
+                System.out.println("pets.get(1) = " + pets.get(1));
+                System.out.println("pets.get(2) = " + pets.get(2));
+                System.out.println("pets.get(3) = " + pets.get(3));
+                System.out.println("-------");
 
         }
 }
