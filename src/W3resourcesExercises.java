@@ -172,6 +172,19 @@ public class W3resourcesExercises {
                 System.out.println("Is c1 array list empty? "+ c1.isEmpty());
                 System.out.println("-------");
 
+                //TODO:Write a Java program to trim the capacity of an array list the current list size.
+
+                ArrayList<String> names = new ArrayList<>();
+                names.add("Kelvon");
+                names.add("Amirah");
+                names.add("Emily");
+                names.add("Mikey");
+                names.add("Naomi");
+
+                System.out.println("Original names array " + names);
+                names.trimToSize();
+                System.out.println("names array list trimed to size " + names);
+
 
         }
 }
