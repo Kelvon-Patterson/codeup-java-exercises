@@ -213,5 +213,17 @@ public class W3resourcesExercises {
                 System.out.println("pets.get(3) = " + pets.get(3));
                 System.out.println("-------");
 
+                // better way use a loop
+
+                for (String pet : pets) {
+                        System.out.println("pets.get(index) = " + pet);
+                }
+                System.out.println("-------");
+
+                for(int index = 0; index< pets.size(); index++){
+                        System.out.println("pets.get(index) = " + pets.get(index));
+                }
+                System.out.println("-------");
+
         }
 }
