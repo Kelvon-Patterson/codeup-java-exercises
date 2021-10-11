@@ -422,6 +422,9 @@ public int areaOfTriangle(int base, int height){
     public static int nextEdge(int side1, int side2) {
         return (side1 + side2)-1;
     }
+    public static int power(int voltage, int current) {
+        return voltage * current;
+    }
 
     public static void main(String[] args) {
 
