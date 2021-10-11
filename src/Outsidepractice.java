@@ -419,7 +419,9 @@ public static String stringBits(String str) {
 public int areaOfTriangle(int base, int height){
         return (base*height)/2;
 }
-
+    public static int nextEdge(int side1, int side2) {
+        return (side1 + side2)-1;
+    }
 
     public static void main(String[] args) {
 
