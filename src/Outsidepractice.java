@@ -426,6 +426,13 @@ public int areaOfTriangle(int base, int height){
         return voltage * current;
     }
 
+    public static boolean lessThanOrEqualToZero(int num) {
+        if(num <= 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
     public static void main(String[] args) {
 
 
