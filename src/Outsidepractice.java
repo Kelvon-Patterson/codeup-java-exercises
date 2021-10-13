@@ -433,6 +433,10 @@ public int areaOfTriangle(int base, int height){
             return false;
         }
     }
+
+    public boolean sameFirstLast(int[] nums) {
+        return nums.length >= 1 && nums[0] == nums[nums.length - 1];
+    }
     public static void main(String[] args) {
 
 
