@@ -448,6 +448,15 @@ public int areaOfTriangle(int base, int height){
         return nums[0] + nums[1] + nums[2];
     }
 
+    public int[] maxEnd3(int[] nums) {
+        int first = nums[0];
+        int last = nums[2];
+        int max = Math.max(first,last);
+        nums[0]=max;
+        nums[1]=max;
+        nums[2]=max;
+        return nums;
+    }
     public static void main(String[] args) {
 
 
