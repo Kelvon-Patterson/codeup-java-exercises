@@ -437,6 +437,10 @@ public int areaOfTriangle(int base, int height){
     public boolean sameFirstLast(int[] nums) {
         return nums.length >= 1 && nums[0] == nums[nums.length - 1];
     }
+    public int[] makePi() {
+        int [] pi = {3,1,4};
+        return pi;
+    }
     public static void main(String[] args) {
 
 
