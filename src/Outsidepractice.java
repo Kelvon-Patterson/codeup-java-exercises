@@ -510,6 +510,14 @@ public int areaOfTriangle(int base, int height){
             return a;
         }
     }
+    public int[] makeMiddle(int[] nums) {
+
+        int half = nums.length/2;
+        int [] mid = new int[2];
+        mid[0] = nums[half-1];
+        mid[1] = nums[half];
+        return mid;
+    }
     public static void main(String[] args) {
 
 
