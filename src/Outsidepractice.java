@@ -465,6 +465,13 @@ public int areaOfTriangle(int base, int height){
             return false;
         return !(nums[1] == 2 || nums[1] == 3);
     }
+    public int[] makeLast(int[] nums) {
+
+        int newLength = nums.length * 2;
+        int[] newArr = new int[newLength];
+        newArr[newArr.length - 1] = nums[nums.length - 1];
+        return newArr;
+    }
 
     public static void main(String[] args) {
 
