@@ -457,6 +457,15 @@ public int areaOfTriangle(int base, int height){
         nums[2]=max;
         return nums;
     }
+    public int[] makeEnds(int[] nums) {
+        return new int[]{nums[0], nums[nums.length-1]};
+    }
+    public boolean no23(int[] nums) {
+        if(nums[0] == 2 || nums[0] == 3)
+            return false;
+        return !(nums[1] == 2 || nums[1] == 3);
+    }
+
     public static void main(String[] args) {
 
 
