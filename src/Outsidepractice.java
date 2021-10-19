@@ -546,6 +546,14 @@ public int areaOfTriangle(int base, int height){
         }
 
     }
+    public int[] frontPiece(int[] nums) {
+        if(nums.length >2){
+            return  new int []{nums[0], nums[1]};
+        }else{
+            return nums;
+        }
+    }
+
     public static void main(String[] args) {
 
 
