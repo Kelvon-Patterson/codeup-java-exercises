@@ -518,6 +518,15 @@ public int areaOfTriangle(int base, int height){
         mid[1] = nums[half];
         return mid;
     }
+
+    public int[] swapEnds(int[] nums) {
+        int first = nums[0];
+        int last = nums[nums.length-1];
+
+        nums[0] = last;
+        nums[nums.length -1] = first;
+        return nums;
+    }
     public static void main(String[] args) {
 
 
