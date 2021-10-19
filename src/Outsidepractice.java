@@ -538,7 +538,14 @@ public int areaOfTriangle(int base, int height){
         newArr[2] = nums[half+1];
         return newArr;
     }
+    public int maxTriple(int[] nums) {
+        if(nums[0]>nums[nums.length/2]){
+            return Math.max(nums[0], nums[nums.length-1]);
+        }else {
+            return Math.max(nums[nums.length/2], nums[nums.length-1]);
+        }
 
+    }
     public static void main(String[] args) {
 
 
