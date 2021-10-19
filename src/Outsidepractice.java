@@ -527,6 +527,11 @@ public int areaOfTriangle(int base, int height){
         nums[nums.length -1] = first;
         return nums;
     }
+    public int[] plusTwo(int[] a, int[] b) {
+        int [] newArr = new int [] {a[0],a[1],b[0],b[1]};
+        return newArr;
+    }
+
     public static void main(String[] args) {
 
 
