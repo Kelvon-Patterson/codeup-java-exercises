@@ -528,7 +528,14 @@ public int areaOfTriangle(int base, int height){
         return nums;
     }
     public int[] plusTwo(int[] a, int[] b) {
-        int [] newArr = new int [] {a[0],a[1],b[0],b[1]};
+        return new int [] {a[0],a[1],b[0],b[1]};
+    }
+    public int[] midThree(int[] nums) {
+        int [] newArr = new int [3];
+        int half = nums.length/2;
+        newArr[0] = nums[half-1];
+        newArr[1] = nums[half];
+        newArr[2] = nums[half+1];
         return newArr;
     }
 
